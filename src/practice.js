@@ -32,16 +32,16 @@
 // console.log(duchessThird("Jamie"));
 
 
-function addaMult(add) {
-  return function(mult) {
-    return function(input) {
-      return ((input + add) * mult);
-    }
-  }
-}
+// function addaMult(add) {
+//   return function(mult) {
+//     return function(input) {
+//       return ((input + add) * mult);
+//     }
+//   }
+// }
 
-const addTwoMultiplyByThree = addaMult(2)(3);
-const addFiveMultiplyByNine = addaMult(5)(9);
+// const addTwoMultiplyByThree = addaMult(2)(3);
+// const addFiveMultiplyByNine = addaMult(5)(9);
 
-console.log(addTwoMultiplyByThree(5) + " === 21")
-console.log(addFiveMultiplyByNine(8) + " === 117")
+// console.log(addTwoMultiplyByThree(5) + " === 21")
+// console.log(addFiveMultiplyByNine(8) + " === 117")
