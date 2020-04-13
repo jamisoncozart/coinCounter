@@ -8,11 +8,12 @@ describe('coinCounter', () => {
   });
 
   test('should return correct number of quarters based on value passed to coinCounter', () => {
-    expect(change.quarters).toEqual(19);
+    expect(change[0]).toEqual(19);
   });
-  // test('should subtract quarter value from total cost..', () => {
-    
-  // });
+  test('should subtract quarter value from total cost', () => {
+    change = coinCounter(.75);
+    expect(change.totalCost).toEqual(0);
+  });
 });
 
 
