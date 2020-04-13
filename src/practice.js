@@ -17,16 +17,31 @@
 // console.log(lionSound("lion"));
 // console.log(mouseSound("mouse"));
 
-function nameEnhancer(prefix) {
-  return function(suffix) {
-    return function(name) {
-      return `${prefix} ${name} ${suffix}`
+// function nameEnhancer(prefix) {
+//   return function(suffix) {
+//     return function(name) {
+//       return `${prefix} ${name} ${suffix}`
+//     }
+//   }
+// }
+
+// const misterJunior = nameEnhancer("Mister")("Junior");
+// const duchessThird = nameEnhancer("Duchess")("The Third");
+
+// console.log(misterJunior("Jamie"));
+// console.log(duchessThird("Jamie"));
+
+
+function addaMult(add) {
+  return function(mult) {
+    return function(input) {
+      return ((input + add) * mult);
     }
   }
 }
 
-const misterJunior = nameEnhancer("Mister")("Junior");
-const duchessThird = nameEnhancer("Duchess")("The Third");
+const addTwoMultiplyByThree = addaMult(2)(3);
+const addFiveMultiplyByNine = addaMult(5)(9);
 
-console.log(misterJunior("Jamie"));
-console.log(duchessThird("Jamie"));
+console.log(addTwoMultiplyByThree(5) + " === 21")
+console.log(addFiveMultiplyByNine(8) + " === 117")
