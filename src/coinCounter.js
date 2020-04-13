@@ -15,11 +15,6 @@
   };
 }
 
-
-
-
-
-
  function findPrimes(inputNumber, counter = 2, primeArray = []) {
   if (isNaN(inputNumber)) {
     return;
