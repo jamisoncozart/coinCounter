@@ -31,7 +31,6 @@
 // console.log(misterJunior("Jamie"));
 // console.log(duchessThird("Jamie"));
 
-
 // function addaMult(add) {
 //   return function(mult) {
 //     return function(input) {
@@ -45,3 +44,13 @@
 
 // console.log(addTwoMultiplyByThree(5) + " === 21")
 // console.log(addFiveMultiplyByNine(8) + " === 117")
+
+function reverseString(string) {
+  if((typeof string) !== "string") {
+    return;
+  }
+  const wordArray = string.split(" "); 
+
+  const newString = wordArray.join(" ");
+  return reverseString(newString);
+}
